@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventLisner</title>
+    <style>
+      button {
+        font-size: 18px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+      .box {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>color chageble button</h3>
+    <button id="colorChangeButton">Click me to change color</button>
+
+    <h3>toggle visibility</h3>
+    <button type="button" id="toggleButton">click me to see text</button>
+    <div class="box" id="toogleElement">
+      hello how are you
+    </div>
+    <script>
+      let colorChangeButton = document.getElementById("colorChangeButton");
+      colorChangeButton.addEventListener("click", function () {
+        let randomColor =
+          "#" + (Math.random().toString(16) + "000000").slice(2, 8);
+        console.log(randomColor);
+        this.style.backgroundColor = randomColor;
+      });
+
+      let toggleButton = document.getElementById("toggleButton");
+      let toggleElement = document.getElementById("toogleElement");
+
+      // Add a click event listener to the button
+      toggleButton.addEventListener("click", function () {
+        // Toggle the visibility of the element
+        if (toggleElement.style.visibility === "hidden") {
+          toggleElement.style.visibility = "visible";
+        } else {
+          toggleElement.style.visibility = "hidden";
+        }
+      });
+    </script>
+  </body>
+</html>

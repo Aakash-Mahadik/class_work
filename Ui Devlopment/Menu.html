@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .menu-card {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+            text-transform: capitalize;
+
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        caption{
+            background-color: rgba(233, 107, 23, 0.795);
+            color: #fff;
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        .item-description {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Menu</h1>
+    </header>
+
+    <div class="menu-card">
+        <table>
+            <caption>VEG</caption>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="menu-item">
+                    <td>
+                        <img src="PaneerTikka.png" alt="Paneer Tikka"><br>
+                        Paneer Tikka
+                    </td>
+                    <td class="item-description">Paneer cubes marinated in spices and grilled to perfection.</td>
+                    <td>₹249</td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <img src="AlooGobi.png" alt="Aloo Gobi"><br>
+                        Aloo Gobi
+                    </td>
+                    <td class="item-description">A classic North Indian dish made with potatoes and cauliflower in a flavorful curry.</td>
+                    <td>₹180</td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <img src="VegetableBiryani.png" alt="Vegetable Biryani"><br>
+                        Vegetable Biryani
+                    </td>
+                    <td class="item-description"> Fragrant basmati rice cooked with mixed vegetables and aromatic spices.</td>
+                    <td>₹280</td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <img src="PalakPaneer.png" alt="Palak Paneer"><br>
+                        Palak Paneer
+                    </td>
+                    <td class="item-description">Soft paneer cubes in a creamy spinach gravy.</td>
+                    <td>₹240</td>
+                </tr>
+            </tbody>
+
+        </table>
+        
+        <table>
+        <caption>NON-VEG</caption>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="menu-item">
+                    <td>
+                        <img src="ChickenTikka.png" alt="Chicken Tikka"><br>
+                        Chicken Tikka
+                    </td>
+                    <td class="item-description">Tender chicken pieces marinated in spices and grilled to perfection.</td>
+                    <td>₹299</td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <img src="ButterChicken.png" alt="Butter Chicken"><br>
+                        Butter Chicken
+                    </td>
+                    <td class="item-description">Creamy tomato-based curry with succulent pieces of chicken.</td>
+                    <td>₹320</td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <img src="FishCurry.png" alt="Fish Curry"><br>
+                        Fish Curry
+                    </td>
+                    <td class="item-description">Delicious fish cooked in a spicy and tangy gravy.</td>
+                    <td>₹280</td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <img src="MuttonBiryani.png" alt="Mutton Biryani"><br>
+                        Mutton Biryani
+                    </td>
+                    <td class="item-description">Tender mutton pieces cooked with aromatic spices and basmati rice.</td>
+                    <td>₹350</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+</body>
+</html>

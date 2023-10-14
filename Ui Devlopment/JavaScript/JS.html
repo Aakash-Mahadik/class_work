@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h2>JavaScript Example</h2>
+    <p id="para"></p>
+    <form>
+      <label>Enter First Number</label><br />
+      <input type="text" name="first" id="first" /><br />
+      <label>Enter secound Number</label><br />
+      <input type="text" name="secound" id="secound" /><br />
+      <button type="button" onclick="add()">Addition</button>
+      <button type="button" onclick="sub()">Substraction</button>
+      <button type="button" onclick="mul()">Multiplication</button>
+      <button type="button" onclick="div()">Division</button>
+      <h4>Your ans will be displyed here</h4>
+      <p id="Ans"></p>
+    </form>
+
+    <script>
+      document.getElementById("para").innerHTML = "This is from javascript";
+      /*function add(a,b){
+            return a +b;
+        }
+        let sum = add(5,10);
+        document.write("sum is: "+sum);*/
+      function add() {
+        let num1 = parseFloat(document.getElementById("first").value);
+        let num2 = parseFloat(document.getElementById("secound").value);
+        if (!isNaN(num1) && !isNaN(num2)) {
+          document.getElementById("Ans").textContent =
+            " Addition is:" + (num1 + num2);
+        } else {
+          document.getElementById("Ans").textContent =
+            "Please enter valid numbers";
+        }
+      }
+      function sub() {
+        let num1 = parseFloat(document.getElementById("first").value);
+        let num2 = parseFloat(document.getElementById("secound").value);
+        if (!isNaN(num1) && !isNaN(num2)) {
+          document.getElementById("Ans").innerHTML =
+            " Substraction is:" + (num1 - num2);
+        } else {
+          document.getElementById("Ans").textContent =
+            "Please enter valid numbers";
+        }
+      }
+      function mul() {
+        let num1 = parseFloat(document.getElementById("first").value);
+        let num2 = parseFloat(document.getElementById("secound").value);
+        if (!isNaN(num1) && !isNaN(num2)) {
+          document.getElementById("Ans").innerHTML =
+            " Multiplication is:" + num1 * num2;
+        } else {
+          document.getElementById("Ans").textContent =
+            "Please enter valid numbers";
+        }
+      }
+      function div() {
+        let num1 = parseFloat(document.getElementById("first").value);
+        let num2 = parseFloat(document.getElementById("secound").value);
+        if (!isNaN(num1) && !isNaN(num2)) {
+          document.getElementById("Ans").innerHTML =
+            " Division is:" + num1 / num2;
+        } else {
+          document.getElementById("Ans").textContent =
+            "Please enter valid numbers";
+        }
+      }
+    </script>
+  </body>
+</html>

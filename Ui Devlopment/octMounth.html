@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Month Table</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            margin-top: 1em;
+            margin-left: 2em;
+        }
+        table{
+            border: 2px solid grey;
+        }
+        th{
+            background:gray ;
+            color : white;
+            font-size: 2em;
+            border: 2px solid grey;
+            padding: 0 0.5em ;
+        }
+        td{
+            font-size: 1.5em;
+            text-align: center;
+            border: 2px solid grey;
+            padding: 0.5em 1em ;
+            font-weight: 600;
+        }
+        .image{
+            width: 100%;
+            height: 200px;
+            object-fit: fill;
+            border-radius: 25px 25px 0 0;
+        }
+        .sundayweek{
+            color: rgb(218, 23, 23);
+        }
+        .month{
+            background: rgb(197, 55, 79);
+        }
+        .week{
+            background:rgb(64, 180, 180) ;
+            padding: 0.5em 1em ;
+        }
+        .week:first-child{
+            color: rgb(218, 23, 23);
+        }
+        .brand{
+            background:#60f542;color:black;
+        }
+        .holiday{
+            color: rgb(218, 23, 23);
+        }
+        .sun{
+            background: rgb(218, 23, 23);
+        }
+        .special{
+            font-size: small;
+        }
+        
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <table >
+        <caption>
+            <img src="AD.png" class="image" alt="advertising image">
+        </caption>
+      <thead>
+        <tr>
+            <th colspan="3" rowspan="2" class="month">Octomber 2023</th>
+            <th colspan="2">भाद्रपद/आश्विन  </th>
+            <th colspan="2" rowspan="2" class="brand">Kalnirnay</th>
+        </tr>
+        <tr>
+            <th colspan="2">शके १९४५</th>
+        </tr>
+        <tr>
+          <th class="sun">Sun</th>
+          <th class="week">Mon</th>
+          <th class="week">Tue</th>
+          <th class="week">Wed</th>
+          <th class="week">Thu</th>
+          <th class="week">Fri</th>
+          <th class="week">Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td class="sundayweek">1</td>
+        <td class="holiday">2 <br><div class="special">Mahatma Gandhi <br> Jayanti</div></td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+        <tr>
+        <td class="sundayweek">8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+    </tr>
+        <tr>
+        <td class="sundayweek">15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+    </tr>
+        <tr>
+        <td class="sundayweek">22</td>
+        <td>23</td>
+        <td class="holiday">24 <br>Dasara</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+    </tr>
+        <tr>
+        <td class="sundayweek">29</td>
+        <td>30</td>
+        <td>31</td>
+        <td colspan="2">Phinolex Pine <br> advertising</td>
+        <td colspan="2">Another <br> advertising </td>
+        
+    </tr>
+      </tbody>
+    </table>
+</div>
+  </body>
+</html>

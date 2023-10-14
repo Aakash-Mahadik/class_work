@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Using JavaScript</title>
+</head>
+<body>
+    <h2>Even Odd</h2>
+    <form>
+        <label>Enter First Number</label><br />
+        <input type="text" name="first" id="first" /><br />
+        <label>Enter Second Number</label><br />
+        <input type="text" name="second" id="second" /><br />
+        <button type="button" type="button" onclick="evenOdd()">Check Even Odd</button>
+        <h4>Your answer will be displayed here</h4>
+        <p id="Ans"></p>
+    </form>
+    <script>
+        function evenOdd() {
+            let firstNum = parseInt(document.getElementById("first").value);
+            let secondNum = parseInt(document.getElementById("second").value);
+            let resultElement = document.getElementById("Ans");
+
+            if (firstNum > secondNum) {
+                resultElement.textContent = "First number is greater";
+            } else if (secondNum > firstNum) {
+                resultElement.textContent = "Second number is greater";
+            } else {
+                resultElement.textContent = "Both numbers are equal";
+            }
+        }
+    </script>
+</body>
+</html>
